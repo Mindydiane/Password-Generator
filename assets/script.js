@@ -26,6 +26,7 @@ function writePassword() {
 
 // start password function
 function generatePassword() {
+
   var passwordLength = prompt("how long would you like your password? between 8-128 characters.")
 
   if(passwordLength >= 8 || passwordLength <= 128) {
