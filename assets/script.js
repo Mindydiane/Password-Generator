@@ -28,8 +28,9 @@ function writePassword() {
 function generatePassword() {
   var passwordLength = prompt("how long would you like your password? between 8-128 characters.")
   
-  if(passwordLength >= 8 || passwordLength <= 128) {
-  // password length 8-128 characters
+  while(passwordLength >= 8 || passwordLength <= 128) {
+    passwordLength = prompt("Outside boundaries, number has to be within 8-128.")
+    // passwordLength = alert("Outside boundaries, has to be within 8-128")
   
     //new variables for character selection
     var lowerCharacter = confirm("Do you want lower case?");
@@ -80,10 +81,7 @@ function generatePassword() {
     return tempPassword;
   
   }
-  else{
-    window.prompt("input is out of range.")
-    // passwordLength = alert("Outside boundaries, has to be within 8-128")
-  }
+  
 }
 
 
