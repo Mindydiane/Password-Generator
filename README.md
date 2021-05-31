@@ -12,6 +12,8 @@
 
 # checked different screens, works in multiple screens
 
+//next update will need to figure out how to remove , from between characters.
+
 // next update will need to clear password when button is clicked
 --it keeps adding up to previous in till reset button on browser is clicked
 
